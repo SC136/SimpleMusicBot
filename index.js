@@ -52,8 +52,8 @@ client.once(Events.ClientReady, async readyClient => {
 
 // this event is emitted whenever discord-player starts to play a track
 player.events.on('playerStart', (queue, track) => {
-		// we will later define queue.metadata object while creating the queue
-		queue.metadata.channel.send({ embeds: [new EmbedBuilder().setDescription(`\`\`\`started playing ${track.title}\`\`\``)] });
+	// we will later define queue.metadata object while creating the queue
+	queue.metadata.channel.send({ embeds: [new EmbedBuilder().setDescription(`\`\`\`started playing ${track.title}\`\`\``)] });
 });
 
 /////////////////////////////////////////

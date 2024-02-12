@@ -14,9 +14,9 @@ module.exports = {
 
 		try {
 			await command.execute(interaction);
-		    await interaction.client.channels.cache
-		      .get("850294318290829372")
- 		     .send(`Someone Used \`${interaction.commandName}\` Command In **${interaction.guild.name}**`);
+			await interaction.client.channels.cache
+				.get("850294318290829372")
+				.send(`Someone Used \`${interaction.commandName}\` command in **${interaction.guild.name}** which has **${interaction.guild.memberCount} members**`);
 		} catch (error) {
 			console.error(error);
 			if (interaction.replied || interaction.deferred) {
