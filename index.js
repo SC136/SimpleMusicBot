@@ -3,7 +3,7 @@ const path = require('node:path');
 const { Client, Collection, GatewayIntentBits, Events, EmbedBuilder } = require('discord.js');
 const { token } = require('./config.json');
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates], ws: { properties: { $browser: "Discord iOS" } });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates], ws: { properties: { $browser: "Discord iOS" } }});
 
 client.commands = new Collection();
 const foldersPath = path.join(__dirname, 'commands');
