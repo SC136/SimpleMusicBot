@@ -27,9 +27,7 @@ module.exports = {
             //.addField(".uptime", "```Give You The Bot's Uptime!```", true)
             //.addField(".botinfo", "```Give Some Info/Stats About The Bot```", true)
             .setColor("#2F3136")
-            .setFooter(
-                "If You Need Any Help Join The Support Server! Type `.server` To Get The Link!"
-            );
+            //.setFooter("If You Need Any Help Join The Support Server! Type `.server` To Get The Link!");
         await interaction.reply({ embeds: [embed] });
     },
 };
